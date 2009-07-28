@@ -1,0 +1,22 @@
+merb_mongomapper
+==============
+
+A plugin for the Merb framework that provides support for MongoMapper Models.
+
+Currently based around MongoMapper::Document.
+
+
+
+= Connection options
+
+Merb MongoMapper plugin uses config/database.yml for connection configuration.
+
+Options are:
+
+* host. provide a string or an array of strings to attempt connections with
+* database. 
+
+
+Uses the MongDB client MongMapper by  John Nunemaker  .
+
+Hacked together by studying the merb_couchrest plugin.

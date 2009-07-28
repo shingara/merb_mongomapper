@@ -1,0 +1,14 @@
+---
+# This is a sample database file for the CouchRest ORM
+:development: &defaults
+  :database: sample_development
+  :host: localhost
+  :port: 27017
+
+:test:
+  <<: *defaults
+  :database: sample_test
+
+:production:
+  <<: *defaults
+  :database: sample_production
