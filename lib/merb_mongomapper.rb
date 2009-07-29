@@ -15,7 +15,4 @@ if defined?(Merb::Plugins)
     
   end
 
-  
-  Merb::Plugins.add_rakefiles "merb_mongomapper/merbtasks"
-  
 end
