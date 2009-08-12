@@ -5,7 +5,7 @@ require 'merb-core'
 require 'merb-core/tasks/merb'
 
 GEM_NAME = "merb_mongomapper"
-GEM_VERSION = "0.1.0"
+GEM_VERSION = "0.1.1"
 AUTHOR = "Cyril Mougel"
 EMAIL = "cyril.mougelo@gmail.com"
 HOMEPAGE = "http://github.com/shingara/merb_mongomapper"
