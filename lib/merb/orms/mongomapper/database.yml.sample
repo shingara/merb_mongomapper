@@ -1,14 +1,16 @@
 ---
 # This is a sample database file for the CouchRest ORM
 :development: &defaults
-  :database: sample_development
+  :database_prefix: 
+  :database_suffix: _<%= MERB_ENV %> 
+  :database: sample
   :host: localhost
   :port: 27017
 
 :test:
   <<: *defaults
-  :database: sample_test
+  :database: sample
 
 :production:
   <<: *defaults
-  :database: sample_production
+  :database: sample

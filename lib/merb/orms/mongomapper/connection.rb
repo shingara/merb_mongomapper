@@ -29,6 +29,10 @@ module Merb
         def config
           @config ||= get_config
         end
+
+        def database
+          config[:database_prefix] + config[:database] + [:database_suffix]
+        end
         
         def connect
           no_database_file unless File.exists?(config_file)
@@ -37,10 +41,10 @@ module Merb
           host = config[:host] || 'localhost'
           port = config[:port] || 27017
           begin
-            Merb.logger.info!("Attempting connection to the '#{config[:database]}' database on '#{host}' ...")
+            Merb.logger.info!("Attempting connection to the '#{database}' database on '#{host}' ...")
             ::MongoMapper.connection = XGen::Mongo::Driver::Mongo.new(host, port)
             Merb.logger.info!("Connected to '#{host}'")
-            ::MongoMapper.database = config[:database]
+            ::MongoMapper.database = database
             return true
           rescue Errno::ECONNREFUSED
             Merb.logger.info!("#{host} not available")
