@@ -31,7 +31,7 @@ module Merb
         end
 
         def database
-          config[:database_prefix] + config[:database] + [:database_suffix]
+          (config[:database_prefix] || '') + (config[:database] || '') + (config[:database_suffix] || '')
         end
         
         def connect
