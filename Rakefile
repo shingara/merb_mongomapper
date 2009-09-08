@@ -22,7 +22,7 @@ begin
     gem.rubyforge_project = "merb_mongomapper"
     
     gem.add_dependency('merb-core', '>= 1.0.9')
-    gem.add_dependency("mongomapper",    "0.3.3")
+    gem.add_dependency("mongomapper", "~>0.3.3")
   end
 
   Jeweler::RubyforgeTasks.new
