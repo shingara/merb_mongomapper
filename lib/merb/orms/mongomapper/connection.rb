@@ -42,7 +42,7 @@ module Merb
           port = config[:port] || 27017
           begin
             Merb.logger.info!("Attempting connection to the '#{database}' database on '#{host}' ...")
-            ::MongoMapper.connection = XGen::Mongo::Driver::Mongo.new(host, port)
+            ::MongoMapper.connection = Mongo::Connection.new(host, port)
             Merb.logger.info!("Connected to '#{host}'")
             ::MongoMapper.database = database
             return true

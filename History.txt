@@ -1,0 +1,3 @@
+== 0.1.5 ==
+
+* Update compatibility to mongoDB ruby driver 0.14444
