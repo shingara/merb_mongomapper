@@ -1,3 +1,8 @@
+== 0.1.6 ==
+
+* Update mongomapper gem
+* Fix error in database.yml sample
+
 == 0.1.5 ==
 
 * Update compatibility to mongoDB ruby driver 0.14444

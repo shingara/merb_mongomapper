@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{merb_mongomapper}
-  s.version = "0.1.5"
+  s.version = "0.1.6"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Cyril Mougel"]
-  s.date = %q{2009-09-21}
+  s.date = %q{2009-10-05}
   s.email = %q{cyril.mougelo@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
   s.files = [
     ".gitignore",
      "Generators",
+     "History.txt",
      "LICENSE",
      "README",
      "Rakefile",
@@ -36,12 +37,11 @@ Gem::Specification.new do |s|
      "merb_mongomapper.gemspec",
      "spec/spec_helper.rb"
   ]
-  s.has_rdoc = true
   s.homepage = %q{http://github.com/shingara/merb_mongomapper}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{merb_mongomapper}
-  s.rubygems_version = %q{1.3.1}
+  s.rubygems_version = %q{1.3.5}
   s.summary = %q{Merb ORM plugin that provides support for MongoMapper Models}
   s.test_files = [
     "spec/spec_helper.rb"
@@ -49,17 +49,17 @@ Gem::Specification.new do |s|
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
-    s.specification_version = 2
+    s.specification_version = 3
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<merb-core>, [">= 1.0.9"])
-      s.add_runtime_dependency(%q<mongomapper>, ["~> 0.3.5"])
+      s.add_runtime_dependency(%q<mongomapper>, ["~> 0.4.1"])
     else
       s.add_dependency(%q<merb-core>, [">= 1.0.9"])
-      s.add_dependency(%q<mongomapper>, ["~> 0.3.5"])
+      s.add_dependency(%q<mongomapper>, ["~> 0.4.1"])
     end
   else
     s.add_dependency(%q<merb-core>, [">= 1.0.9"])
-    s.add_dependency(%q<mongomapper>, ["~> 0.3.5"])
+    s.add_dependency(%q<mongomapper>, ["~> 0.4.1"])
   end
 end
