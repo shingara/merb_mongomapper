@@ -1,5 +1,5 @@
 require "fileutils"
-require "mongomapper"
+require "mongo_mapper"
 
 
 module Merb

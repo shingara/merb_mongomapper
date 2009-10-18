@@ -16,3 +16,7 @@ if defined?(Merb::Plugins)
   end
 
 end
+
+class MerbMongomapper
+  VERSION = '0.1.7'
+end

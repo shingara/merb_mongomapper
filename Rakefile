@@ -6,7 +6,7 @@ require 'merb-core/tasks/merb'
 
 GEM_NAME = "merb_mongomapper"
 AUTHOR = "Cyril Mougel"
-EMAIL = "cyril.mougelo@gmail.com"
+EMAIL = "cyril.mougel@gmail.com"
 HOMEPAGE = "http://github.com/shingara/merb_mongomapper"
 SUMMARY = "Merb ORM plugin that provides support for MongoMapper Models"
 
@@ -21,7 +21,7 @@ begin
     gem.rubyforge_project = "merb_mongomapper"
     
     gem.add_dependency('merb-core', '>= 1.0.9')
-    gem.add_dependency("mongomapper", "~>0.4.1")
+    gem.add_dependency("mongo_mapper", "~>0.5.5")
   end
 
   Jeweler::RubyforgeTasks.new
